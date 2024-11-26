@@ -1,0 +1,615 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+}
+	/*HEADER */
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 2px;
+	border-color: aqua;
+	
+}
+.content {
+	min-height: 150Spx;
+	background: linear-gradient(
+		90deg,
+		rgb(230, 208, 208)20%,
+		rgb(245, 242, 242)80%
+	);
+	
+}
+
+.menu {
+	position: relative;
+	top: 5px;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	
+}
+.logo2{
+	margin-top: -3px;
+	margin-left: -100px;
+	width: 30%;
+}
+.logo{
+	margin-left: -5%;
+	width: 7%;
+}
+.menu .navbar ul li{
+	position: relative;
+	float: left;
+}
+.menu .navbar ul li a{
+	margin-left: 3px;
+	font-size: 21px;
+	padding: 11px;
+	color: #dc06f0;
+	border-color: black;
+	display: block;
+	font-weight: bold;
+	font-family: cursive;
+	border:1px solid #dc06f0;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
+}
+
+#menu{
+	display: none;
+}
+.menu-icono{
+	width: 250px;
+}
+.menu label {
+	line-height: 80px;
+	cursor: pointer;
+	display: none;
+}
+
+@media(max-width:990px){
+
+	.content{
+		min-height: 95px;
+	}
+	.menu{
+		top:0;
+		padding: 20px;
+	}
+	.menu label {
+		display: initial;
+	}
+	.menu .navbar{
+		width: 300px;
+		position: absolute;
+		top: 90%;
+		left: 0;
+		right: 0;
+		background: linear-gradient(
+		90deg,
+		rgb(214, 189, 204)10%,
+		rgb(246, 244, 250)80%
+	);
+		display: none;
+	}
+	.menu .navbar ul li{
+		width: 100%;
+	}
+	#menu:checked ~ .navbar{
+		display: initial;
+	}
+}
+
+/*CARRUSEL */
+
+
+.slider-frame{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+
+
+}
+
+.slider-frame ul{
+	display: flex;
+	padding: 0;
+	width: 500%;
+  animation: slide 20s infinite alternate ease-in-out;
+
+ 
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+
+}
+
+.slider-frame img {
+	width: 100%;
+	height: 95%;
+	background-size: cover;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
+}
+
+.titulo{
+	
+	text-align: center;
+	margin-top: -48%;
+	color: #FFFFFF;
+	font-size: 40px;
+	font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+/*CARRUSEL PARA LA PAGINA CULTURA*/
+
+
+
+.slider-frameCult{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+	
+
+}
+
+.slider-frameCult ul{
+	display: flex;
+	padding: 0;
+	width: 800%;
+  animation: slide 20s infinite alternate ease-in-out;
+
+ 
+}
+
+.slider-frameCult li {
+	width: 100%;
+	list-style: none;
+
+}
+
+.slider-frameCult img {
+	width: 100%;
+	height: 95%;
+	background-size: cover;
+   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.64);
+}
+
+.titulo2{
+	
+	text-align: center;
+	margin-top: -52%;
+	color: #f3eeee;
+	font-size: 40px;
+	font-family: cursive;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*ESTILO DE LA PAGINA NOSOTROS */ 
+.titulonosotros{
+	color: crimson;
+	margin-left: 24%;
+	margin-top: 2%;
+	font-size: 35px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contenido p{
+	margin-left: 76px;
+	margin-right: 70px;
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: justify;
+	font-family: cursive;
+}
+
+.contenido2 p{
+	margin-left: 76px;
+	margin-right: 70px;
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: justify;
+	font-family: cursive;
+}
+.iconoo{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+
+.contenido3 p{
+
+	margin-left: 76px;
+	margin-right: 70px;
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: left;
+	font-family: cursive;
+}
+
+.imagenreseña{
+	
+	max-height: 7%;
+	width: 100%;
+	box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.64);
+}
+
+.imagenmv{
+	margin-top: 5%;
+	position: relative;
+	max-height: 6%;
+	width: 100%;
+	box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.64);
+}
+
+.titulomision{
+	color:#cb1284;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 29px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.lapiz{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+
+.titulovision{
+	color: blueviolet;
+	margin-top: 4%;
+	font-size: 35px;
+	font-family: cursive;
+	text-align: center;
+	text-decoration: underline;
+}
+.lapiz1{
+	position: relative;
+	width: 2%;
+	margin-top: -20%;
+	margin-left: -3%;
+	
+}
+.lapiz2{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+.lapiz3{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+.lapiz4{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+.lapiz5{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+.lapiz6{
+	position: relative;
+	width: 2%;
+	margin-top: -30%;
+	margin-left: -3%;
+}
+/*ESTILO DE LA PAGINA DIRECTIVA */ 
+.directiva{
+	margin-left: 15%;
+	background: cover;
+	width: 70%;
+}
+.logouptaeb2{
+	margin-top: -3%;
+	position: relative;
+	width: 20%;
+	margin-left: 10%;
+}
+/*ESTILO DE LA PAGINA CULTURA */ 
+.tituloscel{
+	color:#cb1284;
+	text-align: center;
+	margin-top: 55%;
+	font-size: 32px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.tituloscel2{
+	color:#cb1284;
+	text-align: center;
+	margin-top: 10%;
+	font-size: 29px;
+	font-family: justify;
+	text-decoration: underline;
+}
+
+.celebracionescont P{
+	margin-left: 76px;
+	margin-right: 70px;
+	font-size: 18px;
+	margin-top: 4%;
+	text-align: center;
+	font-family: justify;
+}
+.titulocelimg{
+	position: relative;
+	width:15% ;
+	margin-top: -6%;
+	margin-left: 24%;
+}
+.titulocelimg2{
+	position: relative;
+	width:15% ;
+	margin-top: -6%;
+	margin-left: 22%;
+}
+.carnavalimg{
+	position: relative;
+	width:10% ;
+	margin-top: -6%;
+	margin-left: 28%;
+}
+.carnavalimg2{
+	position: relative;
+	width:10% ;
+	margin-top: -6%;
+	margin-left: 23%;
+}
+
+.trompoimg{
+	position: relative;
+	width:14% ;
+	margin-top: -15%;
+	margin-left: 20%;
+}
+.trompoimg2{
+	position: relative;
+	width:15% ;
+	margin-top: -6%;
+	margin-left: 32%;
+}
+.icono1{
+	position: absolute;
+	width: 2%;
+	margin-top: -5%;
+	margin-left: 5%;
+}
+.icono2{
+	position: absolute;
+	width: 2%;
+	margin-top: -5%;
+	margin-left: 4%;
+}
+.icono3{
+	position: absolute;
+	width: 2%;
+	margin-top: -7%;
+	margin-left: 4%;
+}
+.icono4{
+	position: relative;
+	width: 2%;
+	margin-top: -3%;
+	margin-left: 0%;
+}
+.logouptaeb3{
+	margin-top: 3%;
+	position:center;
+	width: 20%;
+	margin-left: 10%;
+}
+
+
+
+/*ESTILO DE LA PAGINA CONTACTOS */
+
+.ubicacion{
+margin: 25px 28%;
+} 
+
+.ubicaciontitulo{
+	color:#cb1284;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 29px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.correotitulo{
+	color:#000000;
+	text-align: center;
+
+	font-size: 20px;
+	font-family: justify;
+}
+.Gmail{
+	position: absolute;
+	width: 3%;
+	margin-top: 1%;
+	margin-left: 8%;
+}
+.Mapaescuela{
+	margin-top: 5%;
+	position:center;
+	width: 130%;
+	margin-left: -10%;
+}
+.logouptaeb4{
+	margin-top: 3%;
+	position:center;
+	width: 20%;
+	margin-left: 10%;
+}
+/*ESTILO DE LA PAGINA INFORMACION */
+.titulosins{
+	position: relative;
+	color:#b9187b;
+	margin-left: 15%;
+	margin-top: 100px;
+	font-size: 28px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.informacioncontent h2{
+	position: relative;
+	text-align: center;
+	color:#cb1284;
+	margin-left: 5%;
+	margin-top: -9%;
+	font-size: 23px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+
+
+.tituloins2{
+	position: relative;
+	text-align: center;
+	color:#cb1284;
+	margin-left: 45%;
+	margin-top: -240px;
+	font-size: 23px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.tituloins3{
+	position: relative;
+	text-align: center;
+	color:#cb1284;
+	margin-left: 80%;
+	margin-top: -240px;
+	font-size: 23px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+
+.informacioncontent h4{
+
+	text-align: center;
+	color:#cb1284;
+	margin-left: 85%;
+	margin-top: -40%;
+	font-size: 23px;
+	font-family: cursive;
+	text-decoration: underline;
+}
+.imgisn{
+	margin-top: 2%;
+	position:center;
+	width: 15%;
+	margin-left: 11%;
+}
+.inicial{
+	margin-top: 3%;
+    position: relative;
+	width: 15%;
+	margin-left:45%;
+}
+
+.requisitos2{
+	margin-left: -14%;
+	position: absolute;
+	margin-top: -6%;
+}
+.inicial2{
+	margin-top: 3%;
+    position: relative;
+	width: 15%;
+	margin-left: 65%;
+}
+
+.inicial3{
+	margin-top: 2%;
+    position: relative;
+	width: 15%;
+	margin-left: 84%;
+}
+
+
+.basica{
+	margin-top: 3%;
+	position: relative;
+	width: 20%;
+	
+}
+.egreso{
+	margin-top: 4%;
+	position: relative;
+	width: 15%;
+	margin-left: 50%;
+}
+.logouptaeb1{
+	margin-top: 3%;
+	position:center;
+	width: 20%;
+	margin-left: 10%;
+}
+/*FOOTER */
+footer {
+	margin-bottom: 0; /* Elimina el margen inferior del footer */
+	width: 100%;
+	height: 20%;
+	position: absolute 	;
+    text-align: center;
+    background: linear-gradient(
+		90deg,
+		rgb(230, 208, 208)20%,
+		rgb(245, 242, 242)80%
+	);
+   
+}
+.footerinicio{
+	margin-bottom: 0; /* Elimina el margen inferior del footer */
+	width: 100%;
+	height: 20%;
+	margin-top: 35%;
+	position: absolute;
+    text-align: center;
+    background: linear-gradient(
+		90deg,
+		rgb(230, 208, 208)20%,
+		rgb(245, 242, 242)80%
+	);
+	
+}
+.logouptaeb5{
+	margin-top: -3%;
+	position:center;
+	width: 20%;
+	margin-left: 10%;
+}
+/*ANIMACION */
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
